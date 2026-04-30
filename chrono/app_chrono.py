@@ -27,11 +27,7 @@ def init_connection():
     # ⚠️ METTEZ ICI LE NOM EXACT DE VOTRE GOOGLE SHEETS
     return client.open("Base_Chronos_Technal").worksheet("Chronos")
 
-try:
-    sheet = init_connection()
-except Exception as e:
-    st.error(f"Erreur de connexion à Google Sheets. Avez-vous bien partagé le fichier avec le robot ?")
-    st.stop()
+sheet = init_connection()
 
 # --- STYLE CSS ---
 st.markdown("""
