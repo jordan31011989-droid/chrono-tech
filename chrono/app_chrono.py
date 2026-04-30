@@ -30,7 +30,7 @@ def init_connection():
 try:
     sheet = init_connection()
 except Exception as e:
-    st.error(f"Erreur de connexion à Google Sheets. Avez-vous bien partagé le fichier avec le robot ?")
+    st.error(f"⚠️ ERREUR TECHNIQUE EXACTE : {e}")
     st.stop()
 
 # --- STYLE CSS ---
