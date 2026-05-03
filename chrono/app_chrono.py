@@ -53,7 +53,7 @@ with tabs[0]:
     with col_input:
         with st.expander("📝 INFOS COMMANDE", expanded=True):
             cmd = st.text_input("N° Commande", placeholder="ex: CMD-2024-001")
-            op = st.selectbox("Opérateur", ["Jordan", "Collaborateur A", "Collaborateur B"])
+            op = st.selectbox("Opérateur", ["Jordan", "Fred", "Didier", "Greg", "Laurent", "Théo", "Florian"])
             qte = st.number_input("Quantité de produits", min_value=1, value=1)
             
         with st.expander("⚙️ CONFIGURATION PRODUIT", expanded=True):
